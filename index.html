@@ -8,7 +8,60 @@
     <!-- style-sheet -->
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
-  <body>
-    <h1 class="text-red-800">Application Work</h1>
+  <body class="bg-gradient-to-r from-purple-500 to-red-400 min-h-screen">
+    <div class="bg-white max-w-md mx-auto mt-10 rounded shadow p-10">
+      <div>
+        <h1 class="font-bold text-primary">CNG Cost Calculater</h1>
+        <p class="text-gray-400 mt-1">Simple tool to calculate the cost</p>
+      </div>
+      <form class="mt-5 space-y-4">
+        <div>
+          <label for="Trip Distance" class="font-semibold text-sm"
+            >Trip Distance <span class="text-red-700">*</span></label
+          >
+          <input
+            type="number"
+            id="Trip Distance"
+            placeholder="Trip Distance"
+            required
+            class="form-input"
+          />
+        </div>
+
+        <div>
+          <label for="Fuel-Efficiency" class="font-semibold text-sm"
+            >Fuel Efficiency <span class="text-red-700">*</span></label
+          >
+          <input
+            type="number"
+            id="Fuel-Efficiency"
+            value="40"
+            placeholder="Fuel-Efficiency"
+            required
+            class="form-input"
+          />
+        </div>
+
+        <div>
+          <label for="Fuel Cost" class="font-semibold text-sm"
+            >Fuel Cost <span class="text-red-700">*</span></label
+          >
+          <input
+            type="number"
+            id="Fuel Cost"
+            value="100"
+            placeholder="Fuel Cost"
+            required
+            class="form-input"
+          />
+        </div>
+        <!--  Button -->
+        <div>
+          <button class="bg-red-500 px-4 py-2 rounded w-full text-white">
+            Calculate
+          </button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
