@@ -11,6 +11,7 @@ if (calculate) {
   console.log("Fuel Charge Per K/m " + kmCharge);
   let fuelCostForTrip = tripDistance * kmCharge;
   console.log("Your Trip Fuel Cost is " + fuelCostForTrip);
+  alert("Your Trip Fuel Cost is " + fuelCostForTrip);
   console.log("Thanks For Visiting My Page" + " " + name);
 } else {
   alert("Thanks For Comming");
