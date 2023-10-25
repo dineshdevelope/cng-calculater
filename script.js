@@ -1,19 +1,31 @@
-let calculate = confirm("You Want to Calculate Your Fuel Cost?");
+/* let firstName = prompt("Enter Your First Name");
+let lastName = prompt("Enter Your Last Name");
+const fullName = firstName + " " + lastName;
+console.log(fullName);
 
-if (calculate) {
-  let name = prompt("Enter Your Name ");
-  let tripDistance = prompt("Enter Your Trip Distance in K/m");
-  console.log("Your Trip Distance :" + tripDistance + "K/m");
-  let fuelEfficency = prompt("Enter Your Fuel Efficiency per Liter");
-  console.log("Your Fuel Efficiency :" + fuelEfficency + " Per Liter");
-  let petrolCost = 100;
-  let kmCharge = petrolCost / fuelEfficency;
-  console.log("Fuel Charge Per K/m " + kmCharge);
-  let fuelCostForTrip = tripDistance * kmCharge;
-  console.log("Your Trip Fuel Cost is " + fuelCostForTrip);
-  alert("Your Trip Fuel Cost is " + fuelCostForTrip);
-  console.log("Thanks For Visiting My Page" + " " + name);
-} else {
-  alert("Thanks For Comming");
-  console.log("Thanks For Visiting My Page");
+let func = document.getElementById("TripDistance");
+console.log(func);
+if (firstName && lastName) {
+  func.innerText = "Welcome" + " " + fullName;
 }
+ */
+const tripDistance = document.getElementById("TripDistance");
+
+const fuelEfficiency = document.querySelector("#Fuel-Efficiency");
+
+const fuelCost = document.querySelector("#Fuel-Cost");
+
+const calBtn = document.querySelector("#calBtn");
+
+calBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  const distanceKm = tripDistance.value;
+  console.log(tripDistance.value);
+  const efficiency = fuelEfficiency.value;
+  console.log(fuelEfficiency.value);
+  const costForFuel = fuelCost.value;
+  console.log(fuelCost.value);
+
+  const result = (distanceKm / efficiency) * costForFuel;
+  console.log(result);
+});

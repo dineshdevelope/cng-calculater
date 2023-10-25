@@ -7,8 +7,6 @@
     <title>CNG Claculater | Dinesh S</title>
     <!-- style-sheet -->
     <link rel="stylesheet" href="./dist/assets/index-1783a8b3.css" />
-    <!--  javascript -->
-    <script src="script.js"></script>
   </head>
   <body class="bg-gradient-to-r from-purple-500 to-red-400 min-h-screen">
     <div class="bg-white max-w-md mx-auto mt-10 rounded shadow p-10">
@@ -18,15 +16,15 @@
       </div>
       <form class="mt-5 space-y-4">
         <div>
-          <label for="Trip Distance" class="font-semibold text-sm"
+          <label for="TripDistance" class="font-semibold text-sm"
             >Trip Distance <span class="text-red-700">*</span></label
           >
           <input
             type="number"
-            id="Trip Distance"
             placeholder="Trip Distance"
             required
             class="form-input"
+            id="TripDistance"
           />
         </div>
 
@@ -45,12 +43,12 @@
         </div>
 
         <div>
-          <label for="Fuel Cost" class="font-semibold text-sm"
+          <label for="Fuel-Cost" class="font-semibold text-sm"
             >Fuel Cost <span class="text-red-700">*</span></label
           >
           <input
             type="number"
-            id="Fuel Cost"
+            id="Fuel-Cost"
             value="100"
             placeholder="Fuel Cost"
             required
@@ -59,11 +57,16 @@
         </div>
         <!--  Button -->
         <div>
-          <button class="bg-red-500 px-4 py-2 rounded w-full text-white">
+          <button
+            id="calBtn"
+            class="bg-red-500 px-4 py-2 rounded w-full text-white"
+          >
             Calculate
           </button>
         </div>
       </form>
     </div>
+    <!--  javascript -->
+    <script src="script.js"></script>
   </body>
 </html>
