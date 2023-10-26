@@ -26,6 +26,11 @@ calBtn.addEventListener("click", (e) => {
   const costForFuel = fuelCost.value;
   console.log(fuelCost.value);
 
-  const result = (distanceKm / efficiency) * costForFuel;
-  console.log(result);
+  if (distanceKm) {
+    const result = (distanceKm / efficiency) * costForFuel;
+    console.log("Your Fuel Cost Is $ " + " " + result);
+    alert("Your Fuel Cost Is $ " + " " + result);
+  } else {
+    alert("Try Again");
+  }
 });
