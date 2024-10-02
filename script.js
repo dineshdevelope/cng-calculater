@@ -29,7 +29,15 @@ calBtn.addEventListener("click", (e) => {
   if (distanceKm) {
     const result = (distanceKm / efficiency) * costForFuel;
     console.log("Your Fuel Cost Is $ " + " " + result);
-    alert("Your Fuel Cost Is $ " + " " + result);
+    alert("Your Fuel Cost Is $ " + " " + parseInt(result));
+
+    const formEl = document.querySelector("#formEl");
+    formEl.reset();
+
+    const costTag = document.querySelector("#costTag");
+    costTag.classList.remove("hidden");
+    const tripCostEl = document.querySelector("#tripCost");
+    tripCostEl.textContent = parseInt(result);
   } else {
     alert("Try Again");
   }
